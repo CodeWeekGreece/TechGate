@@ -1,0 +1,54 @@
+.Sing-up--form{
+    width: 320px;;
+    height: 550px;
+    background: black;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding:15px 30px;
+    border-radius: 20px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.Sing-up--form p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.input--form{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 3px 0px;
+}
+.input--form[type="text"] , [type="password"], select{
+    border: none;
+    border-bottom: 1px solid	white;
+    background:transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+}
+.input--form[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #9c1818;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+}
+.input--form[type="submit"]:hover{
+    cursor: pointer;
+    background: #cf9e0c;
+    color: #000;
+}

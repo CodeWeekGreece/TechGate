@@ -1,0 +1,132 @@
+{% extends 'home/layout.html' %}
+
+{% load static %}
+
+{% block title %} User Info {% endblock %}
+
+{% block style %} <link rel="stylesheet" href="{% static '/css/user_info.css' %}"> {% endblock %}
+
+{% block body %}
+    <!-- <style>
+        body{
+            background-color: rgb(44, 44, 44);
+        }
+        @keyframes fade {
+            0%{
+                opacity: 0%;
+                padding: 1vh;
+            }
+            100%{
+                opacity: 100%;
+            }
+
+            
+        }   
+        @keyframes fade2 {
+            0%{
+                opacity: 0%;
+                padding: 1vh;
+            }
+            100%{
+                opacity: 80%;
+            }
+        }       
+
+        #username{
+            color: rgb(255, 255, 255);
+            padding: 5vh;
+            animation-name: fade;
+            animation-duration: 2s;
+            text-align: center;
+        }
+        #user_info{
+            list-style: none;
+        }
+
+        #user_info li{
+            font-weight: bold;
+            list-style-type: none;
+            color: rgb(173, 173, 173);
+            padding: 15px 0px;
+        }
+        #user-info-container{
+            top: 10vh;
+        }
+        #main_wallpaper{
+            width: 100%;
+            height: max-content;
+            position: absolute;
+            background-size: contain;
+        }
+        .two--color--difference{
+            display: block;
+            color: rgb(255, 0, 0);
+            font-weight: 500;
+            border: none;
+            border-bottom: 1px solid white;
+            width: 87%;           
+        }
+        .info--form{
+            width: 320px;;
+            height: 400px;
+            background: black;
+            top: 60%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            animation-name: fade2;
+            animation-duration: 2s;
+            border-radius: 20px;
+            opacity: 80%;
+        }
+        a#sign_out{
+            text-decoration: none;
+            border: none;
+            outline: none;
+            height: 40px;
+            width: 80%;
+            background-color: #9c1818;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 40px;
+            border: none;
+            margin: 0;
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            animation-name: fade;
+            animation-duration: 2s;
+            opacity: 100%;
+            text-align: center;
+        }
+        a#sign_out:hover{
+            cursor: pointer;
+            background: #cf9e0c;
+            color: #000;
+            transition-duration: 200ms;
+        }
+        h2{
+           font-size: 20px;
+        }
+    </style> -->
+    {% if message %}
+    <div id="user-info-container">
+        <div class="alert alert-success" role="alert">
+            {{ message }}
+        </div>
+    {% endif %}
+        <h1 id="username">Greetings {{ user.username }}!</h1>
+        <div class="info--form">
+        <ul id="user_info">
+            <li><b>Username:</b> <strong class="two--color--difference">{{ user.username }}</strong></li>
+            <li><b>Email:</b> <strong class="two--color--difference"> {{ user.email }}</strong></li>
+            <li><b>First Name:</b> <strong class="two--color--difference"> {{ user.first_name }}</strong></li>
+            <li><b>Last Name:</b> <strong class="two--color--difference"> {{ user.last_name }} </strong></li>
+        </ul>
+        <a id="sign_out" href="{% url 'users:sign_out' %}" ><h2> Sign Out </h2></a>
+        </div>
+    </div>
+    {% endblock %}
