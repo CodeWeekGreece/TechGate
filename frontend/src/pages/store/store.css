@@ -1,0 +1,275 @@
+.store {
+  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  color: white;
+}
+
+.store .store-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+}
+
+.store .store-info .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+.store .store-info .first-col h1 {
+  margin: 25px;
+}
+
+.store .store-info .first-col .image {
+  width: 100%;
+  height: auto;
+}
+
+.store .store-info .second-col {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.store .store-info .second-col .calendar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.store .store-info .second-col .calendar .react-calendar {
+  width: 90%;
+}
+
+.store .map {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.store .map .map-title {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15vh 0 2vh 0;
+}
+
+.store .map .map-container {
+  height: 100%;
+  width: 90%;
+}
+
+.store .map .map-container .leaflet-container {
+  height: 100%;
+}
+
+.store .posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 15vh;
+}
+
+.store .posts .posts-title {
+  width: 85%;
+}
+
+.store .posts .posts-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  gap: 10px;
+  width: 80%;
+}
+
+.store .review-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15vh;
+}
+
+.store .review-form .comment-form-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+.store .review-form .comment-form-holder .review-title-holder {
+  width: 85%;
+}
+
+.store .review-form .comment-form-holder .stars-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: xx-large;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.store .review-form .comment-form-holder .stars-wrapper .stars {
+  width: 80%;
+}
+
+.store .review-form .comment-form-holder .stars-wrapper .stars input[type="radio"] {
+  display: none;
+}
+
+.store .review-form .comment-form-holder .stars-wrapper .stars .star {
+  cursor: pointer;
+}
+
+.store .review-form .comment-form-holder .comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.store .review-form .comment-form-holder .comment-form .content {
+  width: 100%;
+  height: auto;
+  border: none;
+  background-color: #3E3E3E;
+  color: white;
+  border-radius: 20px;
+  padding: 13px;
+}
+
+.store .review-form .comment-form-holder .comment-form .content:focus {
+  outline: none;
+}
+
+.store .review-form .comment-form-holder .comment-form .send-button {
+  color: white;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.store .review-form .comment-form-holder .comment-form .send-button:hover {
+  cursor: pointer;
+}
+
+.store .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 10vh 0;
+}
+
+.store .reviews .comments-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.store .reviews .comments-container .no-reviews {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.store .reviews .comments-container .no-reviews .comment-slash {
+  font-size: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .store .store-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=store.css.map */

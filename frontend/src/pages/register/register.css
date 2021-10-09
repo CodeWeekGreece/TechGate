@@ -1,0 +1,422 @@
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../login/wallpaper.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.register .triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 100vh solid black;
+  border-right: 100px solid transparent;
+}
+
+.register .register-frame {
+  /* register-frame */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 77px 22px;
+  position: static;
+  width: 893px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.register .register-frame .form-container {
+  /* form-container */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  position: static;
+  width: 541px;
+  height: 490px;
+  left: 176px;
+  top: 295px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.register .register-frame .form-container .label {
+  color: darkgrey;
+  margin: 20px 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.register .register-frame .form-container .field {
+  /* email */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+  position: static;
+  width: 359px;
+  height: 64px;
+  left: 91px;
+  top: 0px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.register .register-frame .form-container .names-holder, .register .register-frame .form-container .passwords-holder {
+  /* names-holder */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 541px;
+  height: 64px;
+  left: 0px;
+  top: 170px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.register .register-frame .form-container .login-register-btns {
+  /* login-register-btns */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px;
+  position: static;
+  width: 290px;
+  height: 150px;
+  left: 125.5px;
+  top: 340px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.register .register-frame .form-container .login-register-btns .register-btn {
+  /* login-btn */
+  font-size: larger;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: static;
+  width: 258px;
+  height: 51px;
+  left: 16px;
+  top: 16px;
+  background: #D9BC00;
+  border: 7px solid #D9BC00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.register .register-frame .form-container .login-register-btns .register-btn:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+}
+
+.register .register-frame .form-container .login-register-btns .register-btn:focus {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+  outline: none;
+}
+
+.register .register-frame .form-container .login-register-btns .login-btn {
+  /* register-btn */
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 11px 60px;
+  position: static;
+  width: 258px;
+  height: 49px;
+  left: 16px;
+  top: 88px;
+  border: 3px solid #D9BC00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.register .register-frame .form-container .login-register-btns .login-btn:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+}
+
+.register .register-frame .form-container .login-register-btns .login-btn:focus {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+  outline: none;
+}
+
+.register .register-frame .form-container input[type="email"], .register .register-frame .form-container input[type="password"],
+.register .register-frame .form-container input[type="text"] {
+  color: white;
+  background-color: #0e0e0e;
+  border: none;
+  width: 98%;
+  padding: 5px 0 5px 15px;
+  margin: 0px 5px 0px 5px;
+  border-radius: 15px;
+}
+
+.register .register-frame .form-container input[type="email"]:focus, .register .register-frame .form-container input[type="password"]:focus,
+.register .register-frame .form-container input[type="text"]:focus {
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+.register .register-frame .form-container #email:not(:placeholder-shown),
+.register .register-frame .form-container #username:not(:placeholder-shown),
+.register .register-frame .form-container #first-name:not(:placeholder-shown),
+.register .register-frame .form-container #last-name:not(:placeholder-shown),
+.register .register-frame .form-container #password:not(:placeholder-shown),
+.register .register-frame .form-container #password2:not(:placeholder-shown) {
+  background-color: black;
+}
+
+.register .register-frame .form-container #email:not(:placeholder-shown) ~ .email-line,
+.register .register-frame .form-container #username:not(:placeholder-shown) ~ .password-line,
+.register .register-frame .form-container #first-name:not(:placeholder-shown) ~ .first-name-line,
+.register .register-frame .form-container #last-name:not(:placeholder-shown) ~ .last-name-line,
+.register .register-frame .form-container #password:not(:placeholder-shown) ~ .password-line,
+.register .register-frame .form-container #password2:not(:placeholder-shown) ~ .password2-line {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.register .register-frame .form-container #email:valid:focus ~ .email-line,
+.register .register-frame .form-container #username:valid:focus ~ .password-line,
+.register .register-frame .form-container #first-name:valid:focus ~ .first-name-line,
+.register .register-frame .form-container #last-name:valid:focus ~ .last-name-line,
+.register .register-frame .form-container #password:valid:focus ~ .password-line,
+.register .register-frame .form-container #password2:valid:focus ~ .password2-line {
+  background-color: forestgreen;
+}
+
+.register .register-frame .form-container #email:invalid ~ .email-line,
+.register .register-frame .form-container #username:invalid ~ .password-line,
+.register .register-frame .form-container #first-name:invalid ~ .first-name-line,
+.register .register-frame .form-container #last-name:invalid ~ .last-name-line,
+.register .register-frame .form-container #password:invalid ~ .password-line,
+.register .register-frame .form-container #password2:invalid ~ .password2-line {
+  background-color: red;
+}
+
+.register .register-frame .form-container #email:focus ~ .email-line,
+.register .register-frame .form-container #username:focus ~ .password-line,
+.register .register-frame .form-container #first-name:focus ~ .first-name-line,
+.register .register-frame .form-container #last-name:focus ~ .last-name-line,
+.register .register-frame .form-container #password:focus ~ .password-line,
+.register .register-frame .form-container #password2:focus ~ .password2-line {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.register .register-frame .form-container .holder {
+  width: 100%;
+}
+
+.register .register-frame .form-container .line {
+  /* line */
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  width: 339px;
+  height: 3px;
+  left: 10px;
+  top: 47px;
+  background: #746400;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.register .register-frame .form-container .nested-line {
+  /* line */
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  width: 98%;
+  height: 3px;
+  left: 10px;
+  top: 47px;
+  background: #746400;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.register .register-frame .form-container .nested-field {
+  width: 100%;
+}
+/*# sourceMappingURL=register.css.map */

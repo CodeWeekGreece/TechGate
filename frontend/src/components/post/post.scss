@@ -1,0 +1,27 @@
+.post {
+    background-color: #3E3E3E;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 25px;
+    height: min-content;
+
+    .title {
+
+    }
+
+    .image {
+
+        img {
+            width: 100%;
+            margin: 20px 0;
+            // object-fit: fill;
+        }
+    }
+
+    .description {
+
+    }
+}

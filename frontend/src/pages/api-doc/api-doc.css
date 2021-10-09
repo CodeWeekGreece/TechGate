@@ -1,0 +1,58 @@
+.api-doc {
+  overflow: auto;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.api-doc .content {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+}
+
+.api-doc .content .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+
+.api-doc .content .text-container .category .sub-category {
+  margin: 100px 0 100px 0;
+  font-size: larger;
+}
+
+.api-doc .content .text-container .category .sub-category .methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.api-doc .content .text-container .category .sub-category .methods .method {
+  font-size: large;
+  margin: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-weight: 450;
+}
+/*# sourceMappingURL=api-doc.css.map */

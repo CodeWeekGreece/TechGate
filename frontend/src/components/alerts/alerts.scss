@@ -1,0 +1,10 @@
+.alert {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .close-icon {
+        margin: 5px 5px 5px 12px;
+    }
+}

@@ -1,0 +1,71 @@
+.home {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 100vh;
+    color: white;
+
+    .home-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .carousel-wrapper {
+            width: 90%;
+            margin: 0;
+            padding: 0;
+
+            .carousel { // slide
+
+                .carousel-inner {
+
+                    .carousel-item, .active-carousel-item {
+                        height: 445px;
+
+                        a {
+                            display: flex;
+                            justify-content: center;
+
+                            img {
+                                // width: 900px;
+                                // height: 40vh;
+                                // object-fit: cover;
+                                object-fit: contain;
+                                // max-width: ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .recommendations-wrapper {
+            width: 90%;
+            margin: 40px 0 60px 0;
+
+            .cards-wrapper {
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px 10px;
+                
+            }
+        }
+
+        .more-shops-wrapper {
+            width: 90%;
+
+            .stores-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.header {
+    color: darkgrey;
+    margin: 25px 0;
+    font-weight: 500;
+    font-size: xx-large;
+}

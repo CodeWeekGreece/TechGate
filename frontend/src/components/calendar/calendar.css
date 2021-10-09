@@ -1,0 +1,45 @@
+.calendar {
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.calendar .time-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.calendar .time-holder .start, .calendar .time-holder .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar .time-holder .start input[type="time"], .calendar .time-holder .end input[type="time"] {
+  margin: 7px;
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.calendar .react-calendar {
+  margin: 50px 0;
+}
+
+.calendar .btn-primary {
+  margin: 30px;
+}
+/*# sourceMappingURL=calendar.css.map */

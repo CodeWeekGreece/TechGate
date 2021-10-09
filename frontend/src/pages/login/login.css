@@ -1,0 +1,363 @@
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(./wallpaper.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.login .triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 100vh solid black;
+  border-right: 100px solid transparent;
+}
+
+.login .login-frame {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 77px 22px;
+  position: static;
+  height: 100%;
+  width: 893px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.login .login-frame .form-container {
+  /* form-container */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  position: static;
+  width: 359px;
+  height: 320px;
+  left: 267px;
+  top: 380px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.login .login-frame .form-container .email-container {
+  /* email-container */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: static;
+  width: 359px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.login .login-frame .form-container .password-container {
+  /* password-container */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: static;
+  width: 359px;
+  height: 64px;
+  left: 0px;
+  top: 85px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.login .login-frame .form-container .line {
+  /* line */
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  width: 339px;
+  height: 3px;
+  left: 10px;
+  top: 47px;
+  background: #746400;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.login .login-frame .form-container .label {
+  color: darkgrey;
+  margin: 20px 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.login .login-frame .form-container input[type="email"], .login .login-frame .form-container input[type="password"] {
+  color: white;
+  background-color: #0e0e0e;
+  border: none;
+  width: 100%;
+  padding: 5px 0 5px 15px;
+  border-radius: 15px;
+}
+
+.login .login-frame .form-container input[type="email"]:focus, .login .login-frame .form-container input[type="password"]:focus {
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+.login .login-frame .form-container input[type="email"]:focus ~ .email-line,
+.login .login-frame .form-container input[type="password"]:focus ~ .password-line {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.login .login-frame .form-container input[type="email"]:not(:placeholder-shown) ~ .email-line,
+.login .login-frame .form-container input[type="password"]:not(:placeholder-shown) ~ .password-line {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.login .login-frame .form-container input[type="email"]:not(:placeholder-shown),
+.login .login-frame .form-container input[type="password"]:not(:placeholder-shown) {
+  background-color: #000000;
+}
+
+.login .login-frame .form-container input[type="email"]:valid:focus ~ .email-line {
+  background-color: forestgreen;
+}
+
+.login .login-frame .form-container input[type="email"]:invalid:focus ~ .email-line {
+  background-color: red;
+}
+
+.login .login-frame .form-container .login-btns {
+  /* login-register-btns */
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px;
+  position: static;
+  width: 290px;
+  height: 150px;
+  left: 34.5px;
+  top: 170px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.login .login-frame .form-container .login-btns .login-btn {
+  /* login-btn */
+  font-size: larger;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: static;
+  width: 258px;
+  height: 51px;
+  left: 16px;
+  top: 16px;
+  background: #D9BC00;
+  border: 7px solid #D9BC00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.login .login-frame .form-container .login-btns .login-btn:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+}
+
+.login .login-frame .form-container .login-btns .login-btn:focus {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+  outline: none;
+}
+
+.login .login-frame .form-container .login-btns .register-btn {
+  /* register-btn */
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  /* Auto Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 11px 60px;
+  position: static;
+  width: 258px;
+  height: 49px;
+  left: 16px;
+  top: 88px;
+  border: 3px solid #D9BC00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 21px 0px;
+}
+
+.login .login-frame .form-container .login-btns .register-btn:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+}
+
+.login .login-frame .form-container .login-btns .register-btn:focus {
+  -webkit-box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+          box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+  outline: none;
+}
+/*# sourceMappingURL=login.css.map */

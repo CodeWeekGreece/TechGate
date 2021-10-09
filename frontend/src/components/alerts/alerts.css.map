@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CAKtB;;AATD,AAMI,MANE,CAMF,WAAW,CAAC;EACR,MAAM,EAAE,gBAAgB;CAC3B",
+    "sources": [
+        "alerts.scss"
+    ],
+    "names": [],
+    "file": "alerts.css"
+}

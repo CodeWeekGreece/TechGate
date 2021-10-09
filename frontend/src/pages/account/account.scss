@@ -1,0 +1,38 @@
+.user-info {
+    color: white;
+
+    h1 {
+        margin: 50px;
+    }
+
+    .info-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .info-fields {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+
+            label {
+                font-size: large;
+            }
+
+            .field {
+                font-size: x-large;
+            }
+
+            .buttons-wrapper {
+                display: flex;
+                flex-direction: row;
+
+                .btn {
+                    width: fit-content;
+                    margin: 5px;
+                    transition: 200ms;
+                }
+            }
+        }
+    }
+}

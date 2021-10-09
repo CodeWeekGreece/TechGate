@@ -1,0 +1,85 @@
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav .nav-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-inner .logo-container .logo {
+  width: 200px;
+  height: auto;
+  margin: 0 30px 0 30px;
+}
+
+nav .nav-inner .links-container {
+  width: 60%;
+  padding: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav .nav-inner .links-container .navlink svg {
+  color: white;
+  width: 35px;
+  height: 35px;
+  margin: 0 25px 0 25px;
+}
+
+nav .nav-inner .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+nav .nav-inner .search-box #search {
+  background-color: #000000;
+  margin: 10px;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: larger;
+}
+
+nav .nav-inner .search-box .search-icon {
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+nav .nav-inner .search-box .search-icon:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=nav.css.map */

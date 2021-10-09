@@ -1,0 +1,50 @@
+.favourites {
+  overflow: auto;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.favourites .stores-wrapper {
+  height: 100%;
+}
+
+.favourites .stores-wrapper .no-stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.favourites .stores-wrapper .no-stores .no-stores-message {
+  margin-top: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.favourites .stores-wrapper .no-stores .no-stores-message .heart-broken {
+  color: white;
+  font-size: 77px;
+}
+
+.favourites .stores-wrapper .no-stores .no-stores-message .no-stores-message-text {
+  margin: 40px;
+}
+/*# sourceMappingURL=favourites.css.map */

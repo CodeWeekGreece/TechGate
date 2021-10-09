@@ -1,0 +1,35 @@
+.favourites {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 100vh;
+
+    .stores-wrapper {
+        height: 100%;
+
+        .no-stores {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            // height: 100%;
+            align-items: center;
+            justify-content: space-around;
+
+            .no-stores-message {
+                margin-top: 30vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+
+                .heart-broken {
+                    color: white;
+                    font-size: 77px;
+                }
+
+                .no-stores-message-text {
+                    margin: 40px;
+                }
+            }
+        }
+    }
+}

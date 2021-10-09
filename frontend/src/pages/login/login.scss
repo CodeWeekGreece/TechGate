@@ -1,0 +1,303 @@
+.login {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./wallpaper.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    .triangle {
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 100vh solid black;
+        border-right: 100px solid transparent;
+    }
+
+    .login-frame {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 77px 22px;
+
+        position: static;
+        height: 100%;
+        width: 893px;
+        left: 0px;
+        top: 0px;
+
+        background: #000000;
+        
+        /* Inside Auto Layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 0px 0px;
+        
+        .form-container {
+            /* form-container */
+            
+            
+            /* Auto Layout */
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+
+            position: static;
+            width: 359px;
+            height: 320px;
+            left: 267px;
+            top: 380px;
+
+
+            /* Inside Auto Layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 10px 0px;
+
+            .email-container {
+                /* email-container */
+
+
+                /* Auto Layout */
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                // padding: 10px;
+
+                position: static;
+                width: 359px;
+                height: 64px;
+                left: 0px;
+                top: 0px;
+
+
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 21px 0px;
+            }
+
+            .password-container {
+                /* password-container */
+                
+                
+                /* Auto Layout */
+                
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                // padding: 10px;
+
+                position: static;
+                width: 359px;
+                height: 64px;
+                left: 0px;
+                top: 85px;
+                
+                
+                /* Inside Auto Layout */
+                
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin: 21px 0px;
+            }
+            
+            .line {
+                /* line */
+                transform: scale(0, 1);
+                transition: 300ms;
+
+                width: 339px;
+                height: 3px;
+                left: 10px;
+                top: 47px;
+
+                background: #746400;
+
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+
+            .label {
+                color: darkgrey;
+                margin: 20px 0;
+                // opacity: 0;
+                transition: 200ms;
+            }
+
+            input[type="email"], input[type="password"] {
+                color: white;
+                background-color: #0e0e0e;
+                border: none;
+                width: 100%;
+                padding: 5px 0 5px 15px;
+                border-radius: 15px;
+            }
+
+            input[type="email"]:focus, input[type="password"]:focus {
+                background-color: black;
+                border: none;
+                outline: none;
+            }
+
+            input[type="email"]:focus ~ .email-line, 
+            input[type="password"]:focus ~ .password-line {
+                transform: scale(1, 1);
+            }
+            
+            input[type="email"]:not(:placeholder-shown) ~ .email-line,
+            input[type="password"]:not(:placeholder-shown) ~ .password-line {
+                transform: scale(1, 1);
+            }
+
+            input[type="email"]:not(:placeholder-shown),
+            input[type="password"]:not(:placeholder-shown) {
+                background-color: #000000;
+            }
+
+            input[type="email"]:valid:focus ~ .email-line {
+            // input[type="password"]:valid:focus ~ .password-line {
+                background-color: forestgreen;
+            }
+
+            input[type="email"]:invalid:focus ~ .email-line {
+            // input[type="password"]:invalid:focus ~ .password-line {
+                background-color: red;
+            }
+
+            // input[type="email"]:not(:placeholder-shown) ~ .email-label,
+            // input[type="password"]:not(:placeholder-shown) ~ .password-label {
+            //     opacity: 100%;
+            // }
+
+            .login-btns {
+                /* login-register-btns */
+                
+                
+                /* Auto Layout */
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+
+                position: static;
+                width: 290px;
+                height: 150px;
+                left: 34.5px;
+                top: 170px;
+
+
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+                margin: 21px 0px;
+
+                .login-btn {
+                    /* login-btn */
+                    font-size: larger;
+                    transition: 300ms;
+
+                    /* Auto Layout */
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    // padding: 12px 87px;
+
+                    position: static;
+                    width: 258px;
+                    height: 51px;
+                    left: 16px;
+                    top: 16px;
+
+                    background: #D9BC00;
+                    border: 7px solid #D9BC00;
+                    box-sizing: border-box;
+                    border-radius: 16px;
+
+                    /* Inside Auto Layout */
+
+                    flex: none;
+                    order: 0;
+                    align-self: stretch;
+                    flex-grow: 0;
+                    margin: 21px 0px;
+                }
+
+                .login-btn:hover {
+                    box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+                }
+
+                .login-btn:focus {
+                    box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.9);
+                    outline: none;
+                }
+
+                .register-btn {
+                    /* register-btn */
+                    color: white;
+                    text-decoration: none;
+                    transition: 300ms;
+                    
+                    /* Auto Layout */
+                    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding: 11px 60px;
+                    
+                    position: static;
+                    width: 258px;
+                    height: 49px;
+                    left: 16px;
+                    top: 88px;
+                    
+                    border: 3px solid #D9BC00;
+                    box-sizing: border-box;
+                    border-radius: 16px;
+                    
+                    /* Inside Auto Layout */
+                    
+                    flex: none;
+                    order: 1;
+                    align-self: stretch;
+                    flex-grow: 0;
+                    margin: 21px 0px;
+                }
+
+                .register-btn:hover {
+                    box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+                }
+
+                .register-btn:focus {
+                    box-shadow: 0px 0px 30px rgba(217, 188, 0, 0.7);
+                    outline: none;
+                }
+            }
+        }
+    }
+}

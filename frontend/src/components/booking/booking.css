@@ -1,0 +1,57 @@
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #3E3E3E;
+  color: white;
+  border-radius: 15px;
+  padding: 16px;
+  margin: 7px;
+}
+
+.booking .datetime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking .datetime .starting-date {
+  font-weight: 500;
+}
+
+.booking .datetime .ending-date {
+  font-weight: 400;
+}
+
+.booking .datetime .shop-name {
+  margin: 0 17px;
+}
+
+.booking .action-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.booking .action-buttons .btn {
+  margin: 5px;
+}
+/*# sourceMappingURL=booking.css.map */

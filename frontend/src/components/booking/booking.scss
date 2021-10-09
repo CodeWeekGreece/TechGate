@@ -1,0 +1,38 @@
+.booking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #3E3E3E;
+    color: white;
+    border-radius: 15px;
+    padding: 16px;
+    margin: 7px;
+
+    .datetime {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        .starting-date {
+            font-weight: 500;
+        }
+    
+        .ending-date {
+            font-weight: 400;
+        }
+
+        .shop-name {
+            margin: 0 17px;
+        }
+    }
+
+    .action-buttons {
+        display: flex;
+
+        .btn {
+            margin: 5px;
+        }
+    }
+}

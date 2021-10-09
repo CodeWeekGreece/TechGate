@@ -1,0 +1,175 @@
+.comment-card {
+    /* comment-card */
+    color: rgb(199, 199, 199);
+    margin-top: 10px;
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    // height: 225px;
+    left: 0px;
+    top: 0px;
+
+    background: #3E3E3E;
+    border-radius: 25px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    .profile-image {
+        /* profile-image */
+        width: 7%;
+
+        /* Auto Layout */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        // padding: 40px;
+
+        position: static;
+        // width: 225px;
+        // height: 225px;
+        left: 0px;
+        top: 0px;
+
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+    }
+
+    .name-content {
+        /* name-content */
+
+
+        /* Auto Layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 93%;
+        // height: 187px;
+        left: 225px;
+        top: 0px;
+
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 0px;
+
+        .name-holder {
+            /* name-holder */
+
+
+            /* Auto Layout */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+
+            position: static;
+            // width: 1178px;
+            // height: 86px;
+            left: 0px;
+            top: 0px;
+
+
+            /* Inside Auto Layout */
+
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+            margin: 15px;
+
+            .name {
+                color: white;
+                font-weight: 500;
+
+                .time {
+                    font-weight: 250;
+                }
+            }
+
+            .comments-rating {
+                margin: 0 10px;
+            }
+        }
+
+        .content-holder {
+            /* content-holder */
+
+
+            /* Auto Layout */
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 5px;
+
+            position: static;
+            // width: 1178px;
+            // height: 91px;
+            left: 0px;
+            top: 96px;
+
+
+            /* Inside Auto Layout */
+
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            margin: 10px 0 23px 0;
+
+            .content {
+                /* content */
+
+
+                /* Auto Layout */
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+
+                position: static;
+                // width: 1127px;
+                // height: 40px;
+                left: 25.5px;
+                top: 25.5px;
+
+
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 1;
+                margin: 0px 10px;
+            }
+        }
+    }
+}

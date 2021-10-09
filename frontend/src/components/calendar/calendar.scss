@@ -1,0 +1,50 @@
+.calendar {
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+
+    .time-holder {
+        display: flex;
+        flex-direction: row;
+
+        .start, .end {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input[type="time"] {
+                margin: 7px;
+                padding: 5px;
+                border-radius: 10px;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+    .react-calendar {
+        margin: 50px 0;
+        
+        .react-calendar__navigation {
+            
+            .react-calendar__navigation__arrow {
+            }
+
+            .react-calendar__navigation__label {
+            }
+        }
+
+        .react-calendar__viewContainer {
+
+            .react-calendar__month-view {
+
+                .react-calendar__month-view__days__day {
+                }
+            }
+        }
+    }
+
+    .btn-primary {
+        margin: 30px;
+    }
+}

@@ -1,0 +1,116 @@
+nav {
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .nav-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        .logo-container {
+    
+            .logo {
+                width: 200px;
+                height: auto;
+                margin: 0 30px 0 30px;
+            }
+        }
+
+        .links-container {
+            width: 60%;
+            padding: 4vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            .navlink {
+                
+                svg {
+                    color: rgb(255, 255, 255);
+                    width: 35px;
+                    height: 35px;
+                    margin: 0 25px 0 25px;
+                }
+            }
+        }
+
+        .search-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #000000;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 20px;
+            border: 1px solid grey;
+            // box-shadow: 0px 0px 15px rgba(217, 188, 0, 0.9);
+            // box-shadow: 0px, 0px, 10px rgba(255, 255, 255, 0.9);
+
+            #search {
+                background-color: #000000;
+                margin: 10px;
+                color: white;
+                outline: none;
+                border: none;
+                font-size: larger;
+            }
+
+            .search-icon {
+                color: rgb(255, 255, 255);
+                font-size: 30px;
+                margin-right: 10px;
+            }
+
+            .search-icon:hover {
+                cursor: pointer;
+            }
+
+            // .results {
+            //     position: absolute;
+            //     top: 100px;
+            //     right: 10px;
+            //     width: 200px;
+            //     height: 700px;
+            // }
+        }
+    }
+}
+
+// @media screen and (max-width: 1080px) {
+//     nav {
+//         height: 10vh;
+
+//         label {
+//             display: flex;
+
+//             span {
+//                 display: block;
+//                 width: 10px;
+//                 height: 3px;
+//                 background-color: white;
+//             }
+//         }
+
+//         .nav-inner {
+//             display: flex;
+//             flex-direction: column;
+//             height: max-content;
+//             background-color: black;
+
+//             .logo-container {
+                
+//             }
+    
+//             .links-container {
+                
+//             }
+    
+//             .search-box {
+                
+//             }
+//         }
+//     }
+// }

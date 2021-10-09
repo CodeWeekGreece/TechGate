@@ -1,0 +1,40 @@
+.App {
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+
+    .main-frame {
+        // width: 720px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .main-content-container {
+            height: 100%;
+            // padding: 20px;
+
+            background-color: #000000;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #929292; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(75, 75, 75); 
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+} 

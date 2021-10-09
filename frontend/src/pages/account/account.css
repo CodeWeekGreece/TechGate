@@ -1,0 +1,56 @@
+.user-info {
+  color: white;
+}
+
+.user-info h1 {
+  margin: 50px;
+}
+
+.user-info .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-info .info-container .info-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+}
+
+.user-info .info-container .info-fields label {
+  font-size: large;
+}
+
+.user-info .info-container .info-fields .field {
+  font-size: x-large;
+}
+
+.user-info .info-container .info-fields .buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.user-info .info-container .info-fields .buttons-wrapper .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+/*# sourceMappingURL=account.css.map */

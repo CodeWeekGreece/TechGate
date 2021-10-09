@@ -1,0 +1,43 @@
+.api-doc {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 100vh;
+
+    .content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+    
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 20px;
+
+            .category {
+                
+                .sub-category {
+                    margin: 100px 0 100px 0;
+                    font-size: larger;
+    
+                    .methods {
+                        display: flex;
+                        flex-direction: row;
+    
+                        .method {
+                            font-size: large;
+                            margin: 10px;
+                            padding: 7px;
+                            border-radius: 10px;
+                            background-color: white;
+                            color: black;
+                            font-weight: 450;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
