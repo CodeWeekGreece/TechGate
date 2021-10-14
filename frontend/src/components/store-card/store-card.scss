@@ -96,7 +96,7 @@
     
             .title {
                 /* Frame 2 */
-                font-size: larger   ;
+                font-size: x-large;
 
                 /* Auto Layout */
     
@@ -123,10 +123,10 @@
             .description {
                 /* Frame 4 */
                 color: darkgrey;
-                font-size: smaller;
+                font-size: medium;
 
                 /* Auto Layout */
-    
+
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;

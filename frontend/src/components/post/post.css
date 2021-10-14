@@ -14,10 +14,20 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post .image {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .post .image img {
-  width: 100%;
+  width: auto;
   margin: 20px 0;
+  height: 250px;
 }
 /*# sourceMappingURL=post.css.map */

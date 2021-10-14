@@ -6,7 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 
-import IsAuth from "./Auth";
+import IsAuth from "./auth";
 import MetaTags from "react-meta-tags";
 
 import { useDispatch, connect } from "react-redux";

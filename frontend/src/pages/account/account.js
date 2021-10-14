@@ -31,7 +31,7 @@ const Account = props => {
 
     return (
         <div className="user-info">
-            <Nav />
+            <Nav selected="account" />
             <div className="info-wrapper">
                 <h1>Account</h1>
                 <div className="info-container">

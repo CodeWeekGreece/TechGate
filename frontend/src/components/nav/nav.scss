@@ -35,6 +35,13 @@ nav {
                     margin: 0 25px 0 25px;
                 }
             }
+
+            .selected {
+
+                svg {
+                    color: #D9BC00;
+                }
+            }
         }
 
         .search-box {
@@ -79,38 +86,6 @@ nav {
     }
 }
 
-// @media screen and (max-width: 1080px) {
-//     nav {
-//         height: 10vh;
-
-//         label {
-//             display: flex;
-
-//             span {
-//                 display: block;
-//                 width: 10px;
-//                 height: 3px;
-//                 background-color: white;
-//             }
-//         }
-
-//         .nav-inner {
-//             display: flex;
-//             flex-direction: column;
-//             height: max-content;
-//             background-color: black;
-
-//             .logo-container {
-                
-//             }
+@media screen and (max-width: 1080px) {
     
-//             .links-container {
-                
-//             }
-    
-//             .search-box {
-                
-//             }
-//         }
-//     }
-// }
+}

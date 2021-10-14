@@ -7,17 +7,19 @@
     margin: 20px;
     padding: 25px;
     height: min-content;
+    align-items: center;
 
     .title {
 
     }
 
     .image {
+        width: min-content;
 
         img {
-            width: 100%;
+            width: auto;
             margin: 20px 0;
-            // object-fit: fill;
+            height: 250px;
         }
     }
 

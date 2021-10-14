@@ -12,8 +12,9 @@ import Alert from '../../components/alerts/alerts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faCommentSlash, faStar } from '@fortawesome/free-solid-svg-icons';
 
-import "./store.css";
 import Post from '../../components/post/post';
+
+import "./store.css";
 
 const Store = props => {
     const [shopData, setShopData] = useState({ data: [] });
@@ -177,7 +178,6 @@ const Store = props => {
                         <FontAwesomeIcon icon={faPaperPlane} className="send-button" onClick={handleCommentSubmit} />
                     </form>
                 </div>
-
 
                 <div className="reviews">
                     <div className="comments-container">

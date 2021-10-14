@@ -7,9 +7,10 @@ import Logo from "./logo-text.svg";
 
 import { connect, useDispatch } from 'react-redux';
 
-import "./nav.css";
 import { searchShop } from '../../redux/actions/shopActions';
 import StoreCard from '../store-card/store-card';
+
+import "./nav.css";
 
 const Nav = props => {    
     const [search, setSearch] = useState("");
@@ -39,7 +40,7 @@ const Nav = props => {
     useEffect(() => {
         if (props.results.length !== 0) {
             setResults({
-                data: [props.results],
+                data: props.results,
             });
         };
     }, [props.results]);
@@ -56,6 +57,8 @@ const Nav = props => {
         setSearch(event.target.value);
     };
 
+    console.log(results);
+
     return (
         <nav>
             <input type="checkbox" name="nav-toggle" id="nav-toggle" />
@@ -69,16 +72,16 @@ const Nav = props => {
                     </Link>
                 </div>
                 <div className="links-container">
-                    <Link to="/" className="navlink">
+                    <Link to="/" className={`navlink${props.selected === "home" ? (" selected") : ""}`}>
                         <FontAwesomeIcon icon={faHome} />
                     </Link>
-                    <Link to="/favourites" className="navlink">
+                    <Link to="/favourites" className={`navlink${props.selected === "favourites" ? (" selected") : ""}`}>
                         <FontAwesomeIcon icon={faHeart} />
                     </Link>
-                    <Link to="/bookings-list" className="navlink">
+                    <Link to="/bookings-list" className={`navlink${props.selected === "bookings-list" ? (" selected") : ""}`}>
                         <FontAwesomeIcon icon={faClock} />
                     </Link>
-                    <Link to="/account" className="navlink">
+                    <Link to="/account" className={`navlink${props.selected === "account" ? (" selected") : ""}`}>
                         <FontAwesomeIcon icon={faUser} />
                     </Link>
                 </div>

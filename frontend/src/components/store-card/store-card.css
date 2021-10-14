@@ -123,7 +123,7 @@
 
 .store-card .store-card-link .title-description .title {
   /* Frame 2 */
-  font-size: larger;
+  font-size: x-large;
   /* Auto Layout */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,7 +156,7 @@
 .store-card .store-card-link .title-description .description {
   /* Frame 4 */
   color: darkgrey;
-  font-size: smaller;
+  font-size: medium;
   /* Auto Layout */
   display: -webkit-box;
   display: -ms-flexbox;

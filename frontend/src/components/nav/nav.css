@@ -46,6 +46,10 @@ nav .nav-inner .links-container .navlink svg {
   margin: 0 25px 0 25px;
 }
 
+nav .nav-inner .links-container .selected svg {
+  color: #D9BC00;
+}
+
 nav .nav-inner .search-box {
   display: -webkit-box;
   display: -ms-flexbox;

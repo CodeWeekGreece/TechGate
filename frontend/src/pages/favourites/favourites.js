@@ -49,7 +49,7 @@ const Favourites = (props) => {
 
     return (
         <div className="favourites">
-            <Nav />
+            <Nav selected="favourites" />
             <div className="stores-wrapper">
                 {renderStores()}
             </div>

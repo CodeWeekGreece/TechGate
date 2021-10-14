@@ -32,7 +32,6 @@ const StoreCard2 = props => {
 
     useEffect(() => {
         isInFav();
-        console.log(props);
     }, [dispatch, props, inFav.likeClass]);
     
     function handleLike() {

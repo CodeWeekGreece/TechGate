@@ -44,7 +44,7 @@ const BookingsList = props => {
 
     return (
         <div className="bookings-list">
-            <Nav />
+            <Nav selected="bookings-list" />
             {renderBookings()}
         </div>
     );

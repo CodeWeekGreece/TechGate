@@ -19,13 +19,26 @@
 }
 
 .home .home-inner .carousel-wrapper {
-  width: 90%;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .home-inner .carousel-wrapper .carousel {
+  width: 990px;
 }
 
 .home .home-inner .carousel-wrapper .carousel .carousel-inner .carousel-item, .home .home-inner .carousel-wrapper .carousel .carousel-inner .active-carousel-item {
-  height: 445px;
+  max-height: 445px;
 }
 
 .home .home-inner .carousel-wrapper .carousel .carousel-inner .carousel-item a, .home .home-inner .carousel-wrapper .carousel .carousel-inner .active-carousel-item a {
@@ -38,8 +51,9 @@
 }
 
 .home .home-inner .carousel-wrapper .carousel .carousel-inner .carousel-item a img, .home .home-inner .carousel-wrapper .carousel .carousel-inner .active-carousel-item a img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home .home-inner .recommendations-wrapper {
@@ -77,5 +91,12 @@
   margin: 25px 0;
   font-weight: 500;
   font-size: xx-large;
+}
+
+@media screen and (max-width: 700px) {
+  .home .home-inner .recommendations-wrapper .cards-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=home.css.map */

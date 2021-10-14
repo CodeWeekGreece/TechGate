@@ -52,7 +52,7 @@ const Home = props => {
 
     return (
         <div className="home">
-            <Nav />
+            <Nav selected="home" />
             <div className="home-inner">
                 <div className="carousel-wrapper">
                     {renderCarousel(5)}
